@@ -1,0 +1,132 @@
+:root {
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: #0b0f19;
+  color: #e7e9ee;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 18px;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  padding: 18px;
+  backdrop-filter: blur(6px);
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 920px) {
+  .grid2 { grid-template-columns: 1.15fr 0.85fr; }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  font-size: 12px;
+  color: rgba(231,233,238,0.85);
+}
+
+.h1 {
+  font-size: 40px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 14px 0 8px;
+}
+
+.sub {
+  color: rgba(231,233,238,0.75);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.kpi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.kpi .card {
+  padding: 14px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 600;
+  background: #4f46e5;
+  color: white;
+}
+
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btnSecondary {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.input, .select, .textarea {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: #e7e9ee;
+  outline: none;
+}
+
+.label {
+  font-size: 12px;
+  color: rgba(231,233,238,0.72);
+  margin-bottom: 6px;
+}
+
+.row { display: grid; gap: 10px; }
+
+@media (min-width: 680px) {
+  .row2 { grid-template-columns: 1fr 1fr; }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  margin: 18px 0;
+}
+
+.small {
+  font-size: 12px;
+  color: rgba(231,233,238,0.65);
+}
+
+.footer {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  color: rgba(231,233,238,0.6);
+  font-size: 12px;
+}

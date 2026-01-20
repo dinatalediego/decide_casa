@@ -1,0 +1,19 @@
+# --- Core ---
+SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
+
+# --- PostHog (optional, recommended) ---
+NEXT_PUBLIC_POSTHOG_KEY=
+NEXT_PUBLIC_POSTHOG_HOST=https://app.posthog.com
+
+# --- HubSpot CRM (optional) ---
+HUBSPOT_PRIVATE_APP_TOKEN=
+
+# --- Email (optional) ---
+RESEND_API_KEY=
+RESEND_FROM=DecideCasa <onboarding@resend.dev>
+
+# --- WhatsApp via Twilio (optional) ---
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
