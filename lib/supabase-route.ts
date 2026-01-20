@@ -13,14 +13,17 @@ export function createRouteSupabaseClient(request: NextRequest) {
 
   const supabase = createServerClient(url, anonKey, {
     cookies: {
-      get: (name) => request.cookies.get(name)?.value,
-      set: (name, value, options) => {
-        response.cookies.set({ name, value, ...options });
+      get(name: string) {
+          return request.cookies.get(name)?.value;
+        },
+      set(name: string, value: string, options: any) {
+          response.cookies.set({ name, value, ...options });
+        },
+      remove(name: string, options: any) {
+          response.cookies.set({ name, value: "", ...options });
+        },
+
       },
-      remove: (name, options) => {
-        response.cookies.set({ name, value: "", ...options });
-      },
-    },
   });
 
   return { supabase, response };
